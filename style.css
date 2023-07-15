@@ -130,6 +130,79 @@ main {
     margin: 20px 0;
 }
 
+/*----- Feature Section -----*/
+
+.features {
+    margin: 8rem 0 7rem;
+    display: flex;
+    gap: 5.5rem;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+    color: #131313;
+    font-weight: 700;
+    padding-left: 1rem;
+    border-left: .3rem solid #FF900E;
+    margin-bottom: 1rem;
+}
+
+.feature-description {
+    font-size: 1rem;
+    color: #727272;
+    font-weight: 400;
+}
+
+.feature-box-title {
+    color: #131313;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: .3rem;
+}
+
+.feature-box-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.feature-box {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    margin-top: 1.2rem;
+}
+
+.feature-image img {
+    max-width: 31.25rem;
+    height:  48.75rem;
+}
+
+.year-of-experience {
+    padding: 2rem;
+    color: white;
+    background-color: #FF900E;
+    border-radius: .5rem;
+    width: 12rem;
+    height: 5rem;
+    text-align: center;
+    position: relative;
+    bottom: 4.5rem;
+    right: 3.5rem;
+}
+
+.year-of-experience h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.year-of-experience {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
 /*----- Fact Section -----*/
 
 .facts-title {
@@ -143,6 +216,7 @@ main {
     color: #727272;
     max-width: 32rem;
     font-weight: 400;
+    margin: 1.5rem 0;
 }
 
 .facts-box {
@@ -154,7 +228,7 @@ main {
     border: 1px solid #FF900E;
     border-radius: .5rem;
     text-align: center;
-    padding: 25px 25px;
+    padding: 1.5rem 1.5rem;
 }
 
 .box img {
@@ -173,6 +247,51 @@ main {
     font-size: 1rem;
     color: #727272;
     font-weight: 600;
+}
+
+/*----- Sponspors Section -----*/
+
+.sponspors-content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponspors-content h3 {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 5rem;
+}
+
+.sponspors-content p {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.2rem 0;
+}
+
+.sponspors-logo img {
+    width: 7rem;
+    height: 2rem;
+    margin: 3rem 0  0 4rem;
+}
+
+footer {
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 0 13rem 6rem;
+}
+
+footer p {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+footer small {
+    color: #424242;
+    font-size: 1.1rem;
 }
 
 
@@ -210,6 +329,16 @@ main {
     .teams-title {
         margin-top: 2.5rem;
     }
+    .facts-box {
+        flex-direction: column;
+    }
+    .box {
+        margin-top: .8rem;
+    }
+    footer {
+        margin: 0 1.5rem 1.5rem;
+    }
+    
 }
 
 /*----- Tablet Device -----*/
@@ -229,6 +358,14 @@ main {
     }
     .teams-content {
         padding: 4rem;
+    }
+    .facts-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    footer {
+        margin: 0 1.5rem 1.5rem;
     }
     
 }
