@@ -16,7 +16,7 @@ header {
     font-size: 1.8rem;
     font-weight: 600;
     border-radius: 8px;
-    background-color: #FF900E;
+    background-color: aqua;
     border: none;
     padding: 20px 25px;
     cursor: pointer;
@@ -47,7 +47,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #424242;    
+    color: #424242;
+    font-size: 1.4rem;    
+}
+
+.benner {
+    margin-top: 8rem;
 }
 
 .benner-content {
@@ -118,7 +123,7 @@ main {
 }
 
 .teams-title .feature {
-    color: #FF900E;
+    color: aqua;
     font-weight: 700;
 }
 
@@ -133,7 +138,7 @@ main {
 /*----- Feature Section -----*/
 
 .features {
-    margin: 8rem 0 7rem;
+    margin: 8rem 0 3rem;
     display: flex;
     gap: 5.5rem;
 }
@@ -143,7 +148,7 @@ main {
     color: #131313;
     font-weight: 700;
     padding-left: 1rem;
-    border-left: .3rem solid #FF900E;
+    border-left: .3rem solid aqua;
     margin-bottom: 1rem;
 }
 
@@ -151,6 +156,14 @@ main {
     font-size: 1rem;
     color: #727272;
     font-weight: 400;
+}
+
+.feature-box {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    margin-top: 1.2rem;
 }
 
 .feature-box-title {
@@ -166,23 +179,15 @@ main {
     font-weight: 400;
 }
 
-.feature-box {
-    border-radius: 8px;
-    background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
-    padding: 1rem;
-    margin-top: 1.2rem;
-}
-
 .feature-image img {
-    max-width: 31.25rem;
+    width: 31.25rem;
     height:  48.75rem;
 }
 
 .year-of-experience {
     padding: 2rem;
     color: white;
-    background-color: #FF900E;
+    background-color: aqua;
     border-radius: .5rem;
     width: 12rem;
     height: 5rem;
@@ -225,7 +230,7 @@ main {
 }
 
 .box {
-    border: 1px solid #FF900E;
+    border: 1px solid aqua;
     border-radius: .5rem;
     text-align: center;
     padding: 1.5rem 1.5rem;
@@ -279,7 +284,7 @@ main {
 
 footer {
     border-radius: 8px;
-    background: #FFF4E7;
+    background: rgb(210, 249, 249);
     margin: 0 13rem 6rem;
 }
 
@@ -304,7 +309,7 @@ footer small {
     header {
         padding: 1.5rem;
     }
-    nav {
+    nav, .teams-container, .facts-box, .features {
         flex-direction: column;
     }
     .benner-title {
@@ -312,9 +317,6 @@ footer small {
     }
     main {
         padding: 1.5rem;
-    }
-    .teams-container {
-        flex-direction: column;
     }
     .teams-image {
         grid-template-columns: 1fr;
@@ -329,8 +331,12 @@ footer small {
     .teams-title {
         margin-top: 2.5rem;
     }
-    .facts-box {
-        flex-direction: column;
+    .feature-image img {
+        width: 100%;
+    }
+    .year-of-experience {
+        position: static;
+        margin: 2rem auto 0;
     }
     .box {
         margin-top: .8rem;
@@ -347,17 +353,24 @@ footer small {
     header {
         padding: 4rem;
     }
-    nav {
+    nav, .teams-container, .features {
         flex-direction: column;
     }
     main {
-        padding: 1.5rem;
-    }
-    .teams-container {
-        flex-direction: column;
+        padding: 3rem 1.5rem;
     }
     .teams-content {
         padding: 4rem;
+    }
+    .features {
+        margin-top: 3rem;
+    }
+    .feature-image img {
+        width: 100%;
+    }
+    .year-of-experience {
+        position: static;
+        margin: 2rem auto 0;
     }
     .facts-box {
         display: grid;
