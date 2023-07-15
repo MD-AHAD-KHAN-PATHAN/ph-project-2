@@ -5,3 +5,101 @@
     padding: 0;
 }
 
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 200px;
+}
+
+.primary-btn {
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #FF900E;
+    border: none;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title {
+    font-size: 2.8rem;
+    color: #131313;
+    font-weight: 700;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424242;    
+}
+
+.benner-content {
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.benner-title {
+    font-size: 4rem;
+    text-align: center;
+    color: #131313;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.benner-description {
+    font-size: 1rem;
+    color: #727272;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.benner img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*----- Responsive Media Queries -----*/
+
+/*----- Mobile Device -----*/
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 25px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .benner-title {
+        font-size: 3rem;
+    }
+}
+
+/*----- Tablet Device -----*/
+
+@media screen and (min-width: 576px) and (max-width: 900px) {
+    header {
+        padding: 60px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+
